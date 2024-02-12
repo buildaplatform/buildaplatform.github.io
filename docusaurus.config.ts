@@ -66,7 +66,7 @@ const config: Config = {
           items: [
             {
               label: 'What is buildaplatform?',
-              to: '/docs/what-is-buildaplatform',
+              to: '/docs/overview/what-is-buildaplatform',
             },
             {
               label: 'Getting Started',
