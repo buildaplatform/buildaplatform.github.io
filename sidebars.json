@@ -1,0 +1,11 @@
+{
+  "docs": {
+    "Overview": [
+      "overview/what-is-buildaplatform",
+      "overview/roadmap"
+    ],
+    "Getting Started": [
+      "getting-started/index"
+    ]
+  }
+}

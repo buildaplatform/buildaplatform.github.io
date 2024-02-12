@@ -6,18 +6,10 @@ const config: Config = {
   title: 'buildaplatform',
   tagline: 'Build cloud native platforms',
   favicon: 'img/favicon.ico',
-
-  // Set the production url of your site here
-  url: 'https://docs.buildaplatform.io',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
+  url: 'https://buildaplatform.io',
   baseUrl: '/',
-
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'buildaplatform', // Usually your GitHub org/user name.
-  projectName: 'docs', // Usually your repo name.
-
+  organizationName: 'buildaplatform',
+  projectName: 'buildaplatform.github.io',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
@@ -34,18 +26,12 @@ const config: Config = {
       'classic',
       {
         docs: {
-          sidebarPath: './sidebars.ts',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
+          sidebarPath: 'sidebars.json',
           editUrl:
-            'https://github.com/buildaplatform/buildaplatform.github.io/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/buildaplatform/buildaplatform.github.io/edit/main/docs',
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/buildaplatform/buildaplatform.github.io/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -55,68 +41,45 @@ const config: Config = {
   ],
 
   themeConfig: {
-    // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    colorMode: {
+      respectPrefersColorScheme: true,
+    },
     navbar: {
       title: 'buildaplatform',
-      logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
-      },
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Tutorial',
-        },
-        // {to: '/blog', label: 'Blog', position: 'left'},
-        {
-          href: 'https://github.com/buildaplatform/buildaplatform.github.io',
+          href: 'https://github.com/buildaplatform',
           label: 'GitHub',
-          position: 'right',
+          position: 'left',
+        },
+        {
+          to: 'docs/overview/what-is-buildaplatform',
+          label: 'Docs',
+          position: 'left',
         },
       ],
     },
     footer: {
-      style: 'dark',
       links: [
         {
           title: 'Docs',
           items: [
             {
-              label: 'Tutorial',
-              to: '/docs/intro',
-            },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'What is buildaplatform?',
+              to: '/docs/what-is-buildaplatform',
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              label: 'Getting Started',
+              to: '/docs/getting-started',
             },
           ],
         },
         {
           title: 'More',
           items: [
-            // {
-            //   label: 'Blog',
-            //   to: '/blog',
-            // },
             {
               label: 'GitHub',
-              href: 'https://github.com/buildaplatform/buildaplatform.github.io',
+              href: 'https://github.com/buildaplatform',
             },
           ],
         },

@@ -10,32 +10,31 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
+    title: 'Cloud Native',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        buildaplatform was designed with the cloud in mind.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Kubernetes Native',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        buildaplatform has a fully Kubernetes Native setup, allowing you to
+        bootstrap all your infrastructure and applications within Kubernetes clusters.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Local Development',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        With a strong focus on local development, easily spin up a production like environment in
+        minutes using buildaplatform.
       </>
     ),
   },
